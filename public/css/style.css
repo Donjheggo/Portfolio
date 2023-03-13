@@ -21,10 +21,17 @@ a:hover{
     border-radius: 100%;
 }
 
-@media screen and (min-width: 1199px){
+@media screen and (min-width: 1199px) and (min-width: 1299px){
     .responsive-outlet{
         overflow-y: auto;
         max-height: 40rem;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1399px){
+    .responsive-outlet{
+        overflow-y: auto;
+        max-height: 34rem;
     }
 }
 
@@ -48,7 +55,6 @@ a:hover{
 .low-opacity{
     opacity: 1px;
 }
-
 
 .highlight-container, .highlight {
     position: relative;
@@ -74,7 +80,7 @@ a:hover{
   }
   
 
-.hacker {
+.hacker, .text-warning, nav {
     font-family: 'Space Mono', monospace;
   }
   

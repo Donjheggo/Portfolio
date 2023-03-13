@@ -8,10 +8,10 @@ const MainLayout = () => {
   return (
     <div className='container' style={{display: 'grid', height: '100vh'}}>
       <div className='row justify-content-center align-self-center'>
-        <div className='col-xl-1 col-sm-12'>
+          <div className='col-xl-1 col-sm-12'>
             <Header/>
           </div>
-          <div className='bg-dark text-white rounded col-xl-4 col-sm-12 p-0'>
+          <div className='bg-dark text-white rounded col-xl-4 col-sm-12 p-0 small-screen-hide'>
             <Me/>
           </div>
           <div className='bg-dark responsive-outlet scrollbar text-white rounded mx-1 col-xl-6 col-sm-12 p-4'>

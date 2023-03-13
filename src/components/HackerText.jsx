@@ -30,7 +30,7 @@ const HackerText = ({ text }) => {
   }
 
   return (
-    <h4 className="mt-3 hacker" onMouseOver={handleMouseOver} data-value={text}>
+    <h4 className="mt-2 hacker" onMouseOver={handleMouseOver} data-value={text}>
       {text}
     </h4>
   );
