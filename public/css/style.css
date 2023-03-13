@@ -24,7 +24,7 @@ a:hover{
 @media screen and (min-width: 1199px) and (min-width: 1299px){
     .responsive-outlet{
         overflow-y: auto;
-        max-height: 40rem;
+        max-height: 38rem;
     }
 }
 
