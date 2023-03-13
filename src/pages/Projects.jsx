@@ -13,12 +13,15 @@ const Projects = () => {
 
   const renderProjectsElement = (loadedProjects) => {
     const projectElements = loadedProjects.map(data => (
-      <Project 
-        key={data.id} 
-        name={data.name}
-        framework={data.framework}
-        image={data.image} 
-      />
+      <div className='col-lg-6 col-sm-12' key={data.id}>
+          <Link to={data.id}>
+            <Project  
+              name={data.name}
+              framework={data.framework}
+              image={data.image} 
+            />
+          </Link>
+      </div>
       )
     )
     return (

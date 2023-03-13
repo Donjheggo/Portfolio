@@ -3,8 +3,7 @@ import { Link, useSearchParams, useLoaderData, defer, Await } from 'react-router
 
 const Project = (props) => {
   return (
-        <div className='col-lg-6 col-sm-12'>
-          <Link to="/">
+        <>
             <div>
               <img src={props.image} width="100%" className='rounded'/>
               </div>
@@ -12,8 +11,7 @@ const Project = (props) => {
               <h5>{props.name}</h5>
               <p>{props.framework} Framework</p>
             </div>
-          </Link>
-        </div>
+        </>
   )
 }
 

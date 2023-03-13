@@ -37,7 +37,7 @@ const About = () => {
           <div className='col-6 p-3 border-end border-bottom'>
               <h5>Front-End</h5>
               <p>
-              Modern and mobile-ready website that will help you reach all of your marketing.
+              Modern website that will help you reach all of your marketing.
               </p>
           </div>
           <div className='col-6 p-3 border-bottom'>

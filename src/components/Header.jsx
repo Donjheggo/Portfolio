@@ -10,10 +10,9 @@ const Header = () => {
               <i className="fa-regular fa-moon h5"></i><br/>
               {/* <i className="fa-regular fa-sun h5"></i> */}
             </button>
-
             <div className='bg-dark text-white rounded'>
               <NavLink to="/">
-                <div className='rounded pt-2'>
+                <div className='rounded pt-3'>
                   <div> 
                     <i className="fa-solid fa-address-card h5"></i>
                   </div>
