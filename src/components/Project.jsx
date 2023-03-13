@@ -9,7 +9,7 @@ const Project = (props) => {
               <img src={props.image} width="100%" className='rounded'/>
               </div>
               <div className='text-center'>
-              <h5 className='text-primary'>{props.name}</h5>
+              <h5>{props.name}</h5>
               <p>{props.framework} Framework</p>
             </div>
           </Link>
