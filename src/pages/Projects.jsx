@@ -1,16 +1,39 @@
-import React from 'react'
+import React, {Suspense} from 'react'
 import Project from '../components/Project'
-import ProjectsData from "../data/ProjectsData"
+
+import {Link, useSearchParams, useLoaderData, defer, Await} from "react-router-dom"
+import { getProjects } from "../api/firebase"
+
+export const projectsLoader = () => {
+  return defer({projects: getProjects()})
+}
 
 const Projects = () => {
+  const projectLoader = useLoaderData()
 
-  const projectElements = ProjectsData.projects.map(data => <Project key={data.id} title={data.title} image={data.image} framework={data.framework}/>)
+  const renderProjectsElement = (loadedProjects) => {
+    const projectElements = loadedProjects.map(data => (
+      <Project 
+        key={data.id} 
+        name={data.name}
+        framework={data.framework}
+        image={data.image} 
+      />
+      )
+    )
+    return (
+      <>
+        {projectElements}
+      </>
+    )
+    
+  }
 
   return (
     <div className='projects container'>
       <div className='d-flex justify-content-between'>
         <div>
-          <h4>Projects</h4>
+          <h4 className='text-primary'>Projects</h4>
         </div>
         <div>
           <button className='btn btn-primary'>
@@ -26,7 +49,11 @@ const Projects = () => {
       </div>
       <hr/>
       <div className='row'>
-        {projectElements}
+        <Suspense fallback={<h1>Loading projects...</h1>}>
+          <Await resolve={projectLoader.projects}>
+            {renderProjectsElement}
+          </Await>
+        </Suspense>
       </div>
     </div>
   )
