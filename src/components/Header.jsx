@@ -5,15 +5,15 @@ const Header = () => {
   return (
       <header style={{backgroundColor: 'white', height: '100%'}}>
         <nav className='d-flex justify-content-end gap-4 flex-column h-100 text-center'>
-          <div className='theme-btn bg-primary text-white p-2 rounded mb-auto '>
+          <div className='theme-btn bg-dark text-white rounded p-2 mb-auto '>
             <div>
               <i className="fa-regular fa-moon h4"></i><br/>
               {/* <i className="fa-regular fa-sun h4"></i> */}
             </div>
               THEME
-          </div>
+            </div>
             <NavLink to="/">
-            <div className='bg-primary text-white p-2 rounded '>
+            <div className='bg-dark text-white rounded p-2'>
               <div>
                 <i className="fa-solid fa-address-card h4"></i>
               </div>
@@ -21,7 +21,7 @@ const Header = () => {
             </div>
             </NavLink>
             <NavLink to="/skills">
-              <div className='bg-primary text-white p-2 rounded '>
+              <div className='bg-dark text-white rounded p-2'>
                 <div>
                 <i className="fa-solid fa-laptop h4"></i>
                 </div>
@@ -29,7 +29,7 @@ const Header = () => {
               </div>
             </NavLink>
             <NavLink to="/projects">
-              <div className='bg-primary text-white p-2 rounded '>
+              <div className='bg-dark text-white rounded p-2'>
                 <div>
                 <i className="fa-solid fa-briefcase h4"></i>
                 </div>
@@ -37,7 +37,7 @@ const Header = () => {
               </div>
             </NavLink>
             <NavLink to="/resume">
-              <div className='bg-primary text-white p-2 rounded '>
+              <div className='bg-dark text-white rounded p-2'>
                 <div>
                 <i className="fa-regular fa-file h4"></i>
                 </div>
