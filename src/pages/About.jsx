@@ -3,7 +3,7 @@ import React from 'react'
 const About = () => {
   return (
     <div className='about container'>
-      <h4>About</h4>
+      <h4 className='text-primary'>About</h4>
       <hr/>
       <p className="text-justify">
         Hello! I'm Christian Jhegg Fermilan. Full-Stack Programming 
@@ -32,7 +32,7 @@ const About = () => {
 
       <hr/>
       <div className='skills'>
-      <h4>Skills</h4>
+      <h4 className='text-primary'>Skills</h4>
         <div className='row'>
           <div className='col-6 p-3 border-end border-bottom'>
               <h5>Front-End</h5>
@@ -60,7 +60,7 @@ const About = () => {
             <h5>Tools</h5>
             <ul>
               <li>Visual Studio Code</li>
-              <li>CLI</li>
+              <li>Command Line Interface</li>
               <li>Git</li>
               <li>Github</li>
             </ul>

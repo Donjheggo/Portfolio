@@ -1,27 +1,32 @@
 import React from 'react'
+import Project from '../components/Project'
+import ProjectsData from "../data/ProjectsData"
 
 const Projects = () => {
+
+  const projectElements = ProjectsData.projects.map(data => <Project key={data.id} title={data.title} image={data.image} framework={data.framework}/>)
+
   return (
     <div className='projects container'>
-      <h1>Projects</h1>
+      <div className='d-flex justify-content-between'>
+        <div>
+          <h4>Projects</h4>
+        </div>
+        <div>
+          <button className='btn btn-primary'>
+            All
+          </button>
+          <button className='btn btn-primary mx-2'>
+            React
+          </button>
+          <button className='btn btn-primary'>
+            Django
+          </button>
+        </div>
+      </div>
       <hr/>
       <div className='row'>
-        <div className='col-lg-6 col-sm-12'>
-          <h5>Voting App</h5>
-          <p>Django Framework</p>
-        </div>
-        <div className='col-lg-6 col-sm-12'>
-          <h5>Water Billing with SMS API</h5>
-          <p>Django Framework</p>
-        </div>
-        <div className='col-lg-6 col-sm-12'>
-          <h5>Cleaning Management System</h5>
-          <p>Django Framework</p>
-        </div>
-        <div className='col-lg-6 col-sm-12'>  
-          <h5>Vanlife</h5>
-          <p>React & Firebase</p>
-        </div>
+        {projectElements}
       </div>
     </div>
   )
