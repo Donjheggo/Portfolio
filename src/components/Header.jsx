@@ -8,9 +8,9 @@ const Header = () => {
   }
 
   return (
-      <header style={{backgroundColor: 'white', height: '100%'}}>
+      <header style={{backgroundColor: 'white', height: '100%'}} className="small-screen-hide">
 
-        <nav className='d-flex flex-column gap-4 h-100 text-center bg-light '>
+        <nav className='ms-auto d-flex flex-column h-100 text-center w-75'>
             <NavLink className='text-white bg-dark rounded py-2 mb-auto'>
               <i className="fa-regular fa-moon h5"></i><br/>
               {/* <i className="fa-regular fa-sun h5"></i> */}
@@ -21,7 +21,7 @@ const Header = () => {
                 <div> 
                   <i className="fa-solid fa-address-card h5"></i>
                 </div>
-                <p className='small'>ABOUT</p>
+                <p className='small' style={{fontSize: '12px'}}>ABOUT</p>
               </div>
             </NavLink>
             <hr/>
@@ -30,7 +30,7 @@ const Header = () => {
                 <div>
                 <i className="fa-solid fa-briefcase h5"></i>
                 </div>
-                <p className='small'>PROJECTS</p>
+                <p className='small' style={{fontSize: '12px'}}>WORKS</p>
               </div>
             </NavLink>
 
@@ -40,7 +40,7 @@ const Header = () => {
                 <div>
                 <i className="fa-regular fa-file h5"></i>
                 </div>
-                <p className='small'>RESUME</p>
+                <p className='small' style={{fontSize: '12px'}}>RESUME</p>
               </div>
             </NavLink>
           </div>

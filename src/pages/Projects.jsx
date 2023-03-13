@@ -41,23 +41,23 @@ const Projects = () => {
     <div className='projects container'>
       <div className='d-flex justify-content-between'>
         <div>
-          <h4 className='text-primary'>Projects</h4>
+          <h4 className='text-warning'>Projects</h4>
         </div>
         <div>
           <button 
-          className='btn btn-primary'
+          className='btn btn-warning'
           onClick={() => setSearchParams({})}
           >
             All
           </button>
           <button 
-          className='btn btn-primary mx-2'
+          className='btn btn-warning mx-2'
           onClick={() => setSearchParams({type: 'React'})}
           >
             React
           </button>
           <button 
-          className='btn btn-primary'
+          className='btn btn-warning'
           onClick={() => setSearchParams({type: 'Django'})}
           >
             Django

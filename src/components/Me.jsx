@@ -2,8 +2,10 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 import coverPhoto from "/images/coverphoto.jpg"
 import myPhoto from "/images/Me.png"
+import HackerText from "./HackerText"
 
 const Me = () => {
+
   return (
     <div className='me'>
       <div>
@@ -13,8 +15,15 @@ const Me = () => {
         <img src={myPhoto} className="w-50 my-photo"/>
       </div>
       <div className='text-center'>
-        <h4 className='mt-3'>Christian Jhegg Fermilan</h4>
-        <h5 className='text-primary'>Full Stack Web Developer</h5>
+        {/* <h4 className='mt-3 hacker' data-value="CHRISTIAN JHEGG FERMILAN">Christian Jhegg Fermilan</h4> */}
+        <HackerText text="Christian Jhegg Fermilan" />
+        <p className='text-warning'>
+          <span className='highlight-container'>
+            <span className='highlight'>
+              Full Stack Web Developer
+            </span>
+          </span>
+        </p>
         <nav className='d-flex gap-2 justify-content-center'>
           <NavLink to="">
             <i className="fa-brands fa-github"></i>
@@ -30,10 +39,10 @@ const Me = () => {
       <hr className='mt-5'/>
       <div className="row justify-content-between bottom" style={{marginTop: 'auto'}}>
         <div className='col-6 pb-3 text-center' style={{borderRight: 'solid .1rem'}}>
-          <NavLink> Download CV &nbsp;<i class="fa-solid fa-cloud-arrow-down"></i></NavLink>
+          <a href="/cv/CV.pdf"> Download CV &nbsp;<i className="fa-solid fa-cloud-arrow-down"></i></a>
         </div>
         <div className='col-6 pb-3 text-center'>
-          <NavLink target="_blank"> My Linkedin &nbsp;<i class="fa-brands fa-linkedin"></i></NavLink>
+          <NavLink target="_blank" to="https://www.linkedin.com/in/donjheggo/"> My Linkedin &nbsp;<i className="fa-brands fa-linkedin"></i></NavLink>
         </div>
       </div>
     </div>
