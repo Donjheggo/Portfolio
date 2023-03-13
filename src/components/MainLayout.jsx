@@ -11,10 +11,10 @@ const MainLayout = () => {
         <div className='col-xl-1 col-sm-12'>
           <Header/>
         </div>
-        <div className='bg-dark rounded col-xl-4 col-sm-12 p-0'>
+        <div className='bg-dark text-white rounded col-xl-4 col-sm-12 p-0'>
           <Me/>
         </div>
-        <div className='bg-warning col-xl-6 col-sm-12'>
+        <div className='bg-dark text-white rounded mx-1 col-xl-6 col-sm-12 p-4'>
           <Outlet/>
         </div>
       </div>

@@ -5,7 +5,7 @@ import myPhoto from "/images/Me.png"
 
 const Me = () => {
   return (
-    <div className='me text-white'>
+    <div className='me'>
       <div>
         <img src={coverPhoto} width="100%" className='rounded'/>
       </div>
@@ -17,22 +17,22 @@ const Me = () => {
         <h5 className='text-primary'>Full Stack Web Developer</h5>
         <nav className='d-flex gap-2 justify-content-center'>
           <NavLink to="">
-            <i class="fa-brands fa-github"></i>
+            <i className="fa-brands fa-github"></i>
           </NavLink>
           <NavLink to="">
-            <i class="fa-brands fa-linkedin"></i>
+            <i className="fa-brands fa-linkedin"></i>
           </NavLink>
           <NavLink to="">
-            <i class="fa-brands fa-facebook"></i>
+            <i className="fa-brands fa-facebook"></i>
           </NavLink>
         </nav>
       </div>
       <hr className='mt-5'/>
       <div className="row justify-content-between bottom" style={{marginTop: 'auto'}}>
-        <div className='col-lg-6 text-center' style={{borderRight: 'solid .1rem'}}>
+        <div className='col-6 pb-3 text-center' style={{borderRight: 'solid .1rem'}}>
           <NavLink> Download CV </NavLink>
         </div>
-        <div className='col-lg-6 text-center'>
+        <div className='col-6 pb-3 text-center'>
           <NavLink>My Linkedin</NavLink>
         </div>
       </div>

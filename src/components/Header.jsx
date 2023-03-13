@@ -20,14 +20,6 @@ const Header = () => {
               ABOUT
             </div>
             </NavLink>
-            <NavLink to="/skills">
-              <div className='bg-dark text-white rounded p-2'>
-                <div>
-                <i className="fa-solid fa-laptop h4"></i>
-                </div>
-              SKILLS
-              </div>
-            </NavLink>
             <NavLink to="/projects">
               <div className='bg-dark text-white rounded p-2'>
                 <div>
