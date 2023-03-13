@@ -9,7 +9,7 @@ const Project = (props) => {
               </div>
               <div className='text-center'>
               <h5>{props.name}</h5>
-              <p>{props.framework} Framework</p>
+              <p className='fw-light'>{props.framework} Framework</p>
             </div>
         </>
   )

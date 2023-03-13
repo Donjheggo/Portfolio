@@ -24,8 +24,8 @@ const ProjectDetails = () => {
         </div>
         <div className='mt-4'>
           <h2 className="text-primary">{project.name}</h2>
-          <h5>{project.framework} Framework</h5>
-          <p className='mt-4'>{project.description}</p>
+          <h5 className='fw-light'>{project.framework} Framework</h5>
+          <p className='mt-4 fw-light'>{project.description}</p>
           <Link to={project.url}> {project.url} </Link>
         </div>
       </div>
