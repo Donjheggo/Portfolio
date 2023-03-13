@@ -23,10 +23,10 @@ const ProjectDetails = () => {
           <img src={project.image} width="100%" className='rounded'/>
         </div>
         <div className='mt-4'>
-          <h2>{project.name}</h2>
+          <h2 className="text-primary">{project.name}</h2>
           <h5>{project.framework} Framework</h5>
           <p className='mt-4'>{project.description}</p>
-          <Link to={project.url} className="text-primary"> {project.url} </Link>
+          <Link to={project.url}> {project.url} </Link>
         </div>
       </div>
     )
