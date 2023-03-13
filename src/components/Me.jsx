@@ -4,17 +4,15 @@ import myPhoto from "/images/Me.png"
 
 const Me = () => {
   return (
-    <div className='me-section'>
-      <div className='cover-photo'>
-        Cover Photo
-        {/* <img src={coverPhoto}/> */}
-        <div className='my-photo'>
-          {/* <img src={myPhoto}/> */}
-          My Photo
-        </div>
+    <div className='me'>
+      <div>
+        <img src={coverPhoto} width="100%" height="20%"/>
+      </div>
+      <div className="text-center">
+        <img src={myPhoto} className="w-50 my-photo"/>
       </div>
     </div>
   )
 }
 
-export default Me
+export default Me;

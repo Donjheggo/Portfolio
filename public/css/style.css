@@ -6,3 +6,9 @@ a{
 .theme-btn:hover{
     cursor: pointer;
 }
+
+.my-photo{
+    margin-top: -6rem;
+    background-color: white;
+    border-radius: 100%;
+}

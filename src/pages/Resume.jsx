@@ -34,6 +34,8 @@ const Resume = () => {
           <h3>Skills</h3>
           <ul>
             <li>Web Application Development </li>
+            <li>Intermediate Javascript Skill </li>
+            <li>Intermediate Python Skill </li>
             <li>UI/UX Design</li>
             <li>Photo/Video Editing</li>
           </ul>
