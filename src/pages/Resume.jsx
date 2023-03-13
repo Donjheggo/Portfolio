@@ -4,7 +4,7 @@ import React from 'react'
 const Resume = () => {
   return (
     <div className='resume container'>
-      <h4 className='text-primary'>Resume</h4>
+      <h4 className='text-primary'>Resumes</h4>
       <hr/>
       <div className='row'>
         <div className='col-12'>

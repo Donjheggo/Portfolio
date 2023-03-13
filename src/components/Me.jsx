@@ -30,10 +30,10 @@ const Me = () => {
       <hr className='mt-5'/>
       <div className="row justify-content-between bottom" style={{marginTop: 'auto'}}>
         <div className='col-6 pb-3 text-center' style={{borderRight: 'solid .1rem'}}>
-          <NavLink> Download CV </NavLink>
+          <NavLink> Download CV &nbsp;<i class="fa-solid fa-cloud-arrow-down"></i></NavLink>
         </div>
         <div className='col-6 pb-3 text-center'>
-          <NavLink>My Linkedin</NavLink>
+          <NavLink target="_blank"> My Linkedin &nbsp;<i class="fa-brands fa-linkedin"></i></NavLink>
         </div>
       </div>
     </div>

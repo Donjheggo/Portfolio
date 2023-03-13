@@ -40,7 +40,6 @@ const About = () => {
           <p>Company: &nbsp;
             <span className='fw-light'>
               GROUPXS Solutions GmbH
-
             </span>
           </p>
         </div>
@@ -51,12 +50,14 @@ const About = () => {
       <h4 className='text-primary'>Skills</h4>
         <div className='row'>
           <div className='col-6 p-3 border-end border-bottom'>
+            <i class="fa-brands fa-react h1 text-primary"></i>
               <h5>Front-End</h5>
               <p className='fw-light'>
               Modern website that will help you reach all of your marketing.
               </p>
           </div>
           <div className='col-6 p-3 border-bottom'>
+              <i class="fa-brands fa-square-js h1 text-primary"></i>
               <h5>Back-End</h5>
               <p className='fw-light'>
               Back-end with a NoSQL DB and API written in a standard ExpressJS.
@@ -65,6 +66,7 @@ const About = () => {
         </div>
         <div className='row'>
           <div className='col-6 p-3 border-end'>
+            <i class="fa-solid fa-database h1 text-primary"></i>
               <h5>Databases</h5>
               <ul className='fw-light'>
                 <li>SQLite</li>
@@ -73,6 +75,7 @@ const About = () => {
               </ul>
           </div>
           <div className='col-6 p-3'>
+          <i class="fa-solid fa-code h1 text-primary"></i>
             <h5>Tools</h5>
             <ul className='fw-light'>
               <li>Visual Studio Code</li>
