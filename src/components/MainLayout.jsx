@@ -14,7 +14,7 @@ const MainLayout = () => {
         <div className='bg-dark text-white rounded col-xl-4 col-sm-12 p-0'>
           <Me/>
         </div>
-        <div className='bg-dark text-white rounded mx-1 col-xl-6 col-sm-12 p-4' style={{overflow: 'scroll', maxHeight: '40rem', overflowX: 'hidden'}}>
+        <div className='bg-dark responsive-outlet text-white rounded mx-1 col-xl-6 col-sm-12 p-4'>
           <Outlet/>
         </div>
       </div>
@@ -23,3 +23,5 @@ const MainLayout = () => {
 }
 
 export default MainLayout
+
+// style={{overflowY: 'scroll', maxHeight: '40rem'}}

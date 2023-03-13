@@ -12,3 +12,14 @@ a{
     background-color: white;
     border-radius: 100%;
 }
+
+@media screen and (min-width: 1199px){
+    .responsive-outlet{
+        overflow-y: scroll;
+        max-height: 40rem;
+    }
+
+}
+
+
+    

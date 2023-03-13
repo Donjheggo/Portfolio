@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom'
 const Header = () => {
   return (
       <header style={{backgroundColor: 'white', height: '100%'}}>
-        <nav className='d-flex gap-4 flex-column h-100 text-center'>
+        <nav className='d-flex gap-4 flex-column h-100 text-center bg-light'>
 
             <button className='theme-btn text-white bg-dark rounded py-2 mb-auto'>
               <i className="fa-regular fa-moon h5"></i><br/>
