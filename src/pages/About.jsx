@@ -43,7 +43,7 @@ const About = () => {
           <div className='col-6 p-3 border-bottom'>
               <h5>Back-End</h5>
               <p>
-              Back-end with a NoSQL DB and API written in a standard express router or tRPC.
+              Back-end with a NoSQL DB and API written in a standard ExpressJS.
               </p>
           </div>
         </div>

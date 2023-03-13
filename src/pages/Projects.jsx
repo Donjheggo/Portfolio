@@ -9,12 +9,17 @@ export const projectsLoader = () => {
 }
 
 const Projects = () => {
+  const [searchParams, setSearchParams] = useSearchParams()
   const projectLoader = useLoaderData()
+  const filterType = searchParams.get("type")
 
   const renderProjectsElement = (loadedProjects) => {
-    const projectElements = loadedProjects.map(data => (
+
+    const filteredProjects = filterType ? loadedProjects.filter(project => project.framework === filterType) : loadedProjects
+
+    const projectElements = filteredProjects.map(data => (
       <div className='col-lg-6 col-sm-12' key={data.id}>
-          <Link to={data.id}>
+          <Link to={data.id} state={{search: searchParams.toString(), type: filterType}}>
             <Project  
               name={data.name}
               framework={data.framework}
@@ -39,13 +44,22 @@ const Projects = () => {
           <h4 className='text-primary'>Projects</h4>
         </div>
         <div>
-          <button className='btn btn-primary'>
+          <button 
+          className='btn btn-primary'
+          onClick={() => setSearchParams({})}
+          >
             All
           </button>
-          <button className='btn btn-primary mx-2'>
+          <button 
+          className='btn btn-primary mx-2'
+          onClick={() => setSearchParams({type: 'React'})}
+          >
             React
           </button>
-          <button className='btn btn-primary'>
+          <button 
+          className='btn btn-primary'
+          onClick={() => setSearchParams({type: 'Django'})}
+          >
             Django
           </button>
         </div>
