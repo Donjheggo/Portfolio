@@ -2,15 +2,22 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 
 const Header = () => {
+
+  const test = () => {
+    console.log("test")
+  }
+
   return (
       <header style={{backgroundColor: 'white', height: '100%'}}>
         <nav className='d-flex gap-4 flex-column h-100 text-center bg-light'>
 
-            <button className='theme-btn text-white bg-dark rounded py-2 mb-auto'>
-              <i className="fa-regular fa-moon h5"></i><br/>
-              {/* <i className="fa-regular fa-sun h5"></i> */}
-            </button>
-            <div className='bg-dark text-white rounded'>
+              <NavLink className='theme-btn text-white bg-dark rounded py-2 mb-auto'>
+                <i className="fa-regular fa-moon h5"></i><br/>
+                {/* <i className="fa-regular fa-sun h5"></i> */}
+              </NavLink >
+              
+              <div className='bg-dark text-white rounded'>
+
               <NavLink to="/">
                 <div className='rounded pt-3'>
                   <div> 
@@ -20,6 +27,7 @@ const Header = () => {
                 </div>
               </NavLink>
               <hr/>
+
               <NavLink to="/projects">
                 <div className='rounded pt-2'>
                   <div>
@@ -28,6 +36,7 @@ const Header = () => {
                   <p className='small'>PROJECTS</p>
                 </div>
               </NavLink>
+
               <hr/>
               <NavLink to="/resume">
                 <div className='rounded pt-2'>
