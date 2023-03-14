@@ -26,7 +26,7 @@ const App = () => {
 
   return (
     <div>
-      <ParticlesBg type="circle" bg={true} color="red"/>
+      <ParticlesBg type="lines" bg={true} color="yellow"/>
       <RouterProvider router={router}/>
     </div>
   )
