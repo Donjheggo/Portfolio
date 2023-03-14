@@ -25,7 +25,7 @@ export const getProjects = () => {
           ...doc.data(),
           id: doc.id
         }))
-        // resolve(dataArr)
+        resolve(dataArr)
       } catch (error) {
         reject(error)
       }
