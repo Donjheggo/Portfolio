@@ -12,7 +12,7 @@ const MainLayout = () => {
         <div className='row justify-content-center align-self-center w-100'>
             
             {/*//////  LARGE SCREEN ////// */}
-            <div className='col-xl-1 col-sm-12'>
+            <div className='col-xl-1 col-sm-12 large-header'>
               <Header/>
             </div>
             {/*//////  END ////// */}
@@ -30,7 +30,7 @@ const MainLayout = () => {
             </div>
 
 
-            <div className='position-relative bg-dark responsive-outlet scrollbar text-white large-screen-rounded  mx-1 col-xl-6 col-sm-12 p-4'>
+            <div style={{height: '60rem'}} className='position-relative bg-dark responsive-outlet scrollbar text-white large-screen-rounded  mx-1 col-xl-6 col-sm-12 p-4'>
               <Outlet/>
             </div>
 
@@ -48,5 +48,3 @@ const MainLayout = () => {
 }
 
 export default MainLayout
-
-// style={{overflowY: 'scroll', maxHeight: '40rem'}}

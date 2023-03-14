@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import { CircleLoader } from 'react-spinners'
+import { RingLoader } from 'react-spinners'
 
 const Loader = () => {
 
@@ -11,7 +11,7 @@ const Loader = () => {
 
   return (
     <div className='position-absolute top-50 start-50 translate-middle w-auto responsive-loader'>
-        <CircleLoader
+        <RingLoader
         color={"#ffc107"}
         loading={true}
         size={150}

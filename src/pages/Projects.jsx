@@ -40,7 +40,7 @@ const Projects = () => {
   }
 
   return (
-    <div className='projects container'>
+    <div className='projects container-fluid'>
       <div className='d-flex justify-content-between'>
         <div>
           <h4 className='text-warning'>Projects</h4>

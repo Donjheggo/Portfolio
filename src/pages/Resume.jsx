@@ -3,7 +3,7 @@ import React from 'react'
 
 const Resume = () => {
   return (
-    <div className='resume container'>
+    <div className='resume container-fluid'>
       <h4 className='text-warning'>Resume</h4>
       <hr/>
       <div className='row'>

@@ -15,16 +15,16 @@ const Me = () => {
         <div className="text-center">
           <img src={myPhoto} className="my-photo"/>
         </div>
-        <div className='text-center'>
+        <div className='text-center mt-5'>
           <HackerText text="Christian Jhegg Fermilan" />
-            <p className='text-warning'>
+            <p className='text-warning mt-3'>
               <span className='highlight-container'>
                 <span className='highlight'>
                   Full Stack Web Developer
                 </span>
               </span>
             </p>
-            <nav className='d-flex gap-2 justify-content-center'>
+            <nav className='d-flex gap-2 justify-content-center mt-3'>
               <NavLink to="">
                 <i className="fa-brands fa-github"></i>
               </NavLink>
@@ -37,7 +37,7 @@ const Me = () => {
             </nav>
         </div>
 
-        <div>
+        <div className='my-links'>
           <hr/>
           <div className="d-flex justify-content-between">
             <div className='col-6 text-center'>

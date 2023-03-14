@@ -1,6 +1,7 @@
 import React, {Suspense} from 'react'
 import { Link, useLocation, defer, Await, useLoaderData } from 'react-router-dom'
 import {getProjectDetails} from "../api/firebase"
+import Loader from '../components/Loader'
 import back from "/images/back.svg"
 
 export const projectDetailLoader = ({params}) => {
@@ -34,7 +35,7 @@ const ProjectDetails = () => {
   
   return (
     <div>
-      <Suspense fallback={<h1>Loading...</h1>}>
+      <Suspense fallback={<Loader/>}>
         <Await resolve={loader.projects}>
           {renderProjectDetails}
         </Await>

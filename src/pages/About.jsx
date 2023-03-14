@@ -3,7 +3,7 @@ import React from 'react'
 const About = () => {
 
   return (
-    <div className='about container'>
+    <div className='about container-fluid'>
       <h4 className='text-warning'>About</h4>
       <hr/>
       <p className="fw-light" style={{textAlign: 'justify'}}>

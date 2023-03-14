@@ -34,9 +34,12 @@ export const getProjects = () => {
 }
 
 export const getProjectDetails = async(id) => {
-  const docRef = doc(db, "projects", id)
-  const projectSnapshot = await getDoc(docRef);
-  const data = {...projectSnapshot.data(), id: projectSnapshot.id}
-  return data
+  return new Promise(resolve => {
+    setTimeout(async () => {
+      const docRef = doc(db, "projects", id)
+      const projectSnapshot = await getDoc(docRef);
+      const data = {...projectSnapshot.data(), id: projectSnapshot.id}
+      resolve(data);
+    }, 1000);
+  });
 }
-
