@@ -6,6 +6,7 @@ import About from "./pages/About"
 import Projects, { projectsLoader } from "./pages/Projects"
 import ProjectDetails, { projectDetailLoader } from "./pages/ProjectDetails"
 import Resume from "./pages/Resume"
+import LoginPage from './pages/LoginPage'
 import NotFound from "./pages/NotFound"
 
 import ParticlesBG from './components/ParticlesBG'
@@ -19,6 +20,7 @@ const App = () => {
       <Route path='/resume' element={<Resume/>}/>
       <Route path='/works' element={<Projects/>} loader={projectsLoader} errorElement={<h1>There was an error from the server</h1>} />
       <Route path='/works/:id' element={<ProjectDetails/>} loader={projectDetailLoader} errorElement={<h1>There was an error from the server</h1>} />
+      <Route path='/login' element={<LoginPage/>}/>
       <Route path='*' element={<NotFound/>}/>
     </Route>
   ))

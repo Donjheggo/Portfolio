@@ -28,7 +28,12 @@ a:hover{
     background-color: white;
     border-radius: 100%;
     width: 200px;
+    box-shadow: 0 4px 6px rgb(255,213,0, 0.1), 0 1px 3px rgb(255,213,0, 0.8);
 }   
+
+.projects-img:hover{
+    box-shadow: 0 8px 12px rgb(255,213,0, 0.1), 0 2px 6px rgb(255,213,0, 0.8);
+}
 
 .my-links{
     margin-top: 3rem;
@@ -134,4 +139,31 @@ html::-webkit-scrollbar-track {
 .main-layout{
     padding: 0 !important;
     --bs-gutter-x: 0 !important;
+}
+
+.signin-text{
+    text-align: center;
+}
+
+.email-input, .password-input{
+    width: 100%;
+    border: 1px solid #D1D5DB;
+    padding: .5rem;
+    font-size: 20px;
+}
+
+.email-input{
+    border-radius: 6px 6px 0px 0px;
+}
+
+.password-input{
+    box-shadow: 0px 1px 2px rgb(255,213,0, 0.5);
+    border-radius: 0px 0px 6px 6px;
+}
+
+.signin-btn{
+    width: 100%;
+    margin-top: 30px;
+    border-radius: 5px;
+    border: solid 1px;
 }

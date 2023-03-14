@@ -4,7 +4,7 @@ const Project = (props) => {
   return (
         <>
             <div>
-              <img src={props.image} width="100%" height="300px" className='rounded'/>
+              <img src={props.image} width="100%" height="300px" className='rounded projects-img'/>
               </div>
               <div className='text-center'>
               <h5>{props.name}</h5>
