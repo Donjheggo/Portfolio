@@ -15,7 +15,7 @@ const Me = () => {
         <div className="text-center">
           <img src={myPhoto} className="my-photo"/>
         </div>
-        <div className='text-center mt-5'>
+        <div className='text-center mt-2'>
           <HackerText text="Christian Jhegg Fermilan" />
             <p className='text-warning mt-3'>
               <span className='highlight-container'>

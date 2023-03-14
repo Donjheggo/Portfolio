@@ -31,7 +31,8 @@ a:hover{
 }   
 
 .my-links{
-    margin-top: 8rem;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
 }
 
 
@@ -90,6 +91,9 @@ html::-webkit-scrollbar-track {
     .responsive-loader{
         position: relative !important;
         margin-top: 40%;
+    }
+    .row{
+        --bs-gutter-x: 0 !important;
     }
 
 }

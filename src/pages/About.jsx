@@ -13,7 +13,7 @@ const About = () => {
         I'm working and focusing on my goal every day.
       </p>
       <div className='row'>
-        <div className='col-6'>
+        <div className='col-lg-6'>
           <p>Age: &nbsp;  
             <span className='fw-light'>
               23 years old
@@ -21,7 +21,7 @@ const About = () => {
      
           </p>
         </div>
-        <div className='col-6'>
+        <div className='col-lg-6'>
           <p>Address: &nbsp;
             <span className='fw-light'>
               8400 Surigao City, Ph
@@ -30,14 +30,14 @@ const About = () => {
         </div>
       </div>
       <div className='row'>
-        <div className='col-6'>
+        <div className='col-lg-6'>
           <p>Employment: &nbsp;
             <span className='fw-light'>
               Intern
             </span>
             </p>
         </div>
-        <div className='col-6'>
+        <div className='col-lg-6'>
           <p>Company: &nbsp;
             <span className='fw-light'>
               GROUPXS Solutions GmbH

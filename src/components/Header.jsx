@@ -6,7 +6,7 @@ const Header = () => {
   return (
       <header style={{height: '100%'}} className="small-screen-hide">
 
-        <nav className='ms-auto d-flex flex-column h-100 text-center w-75'>
+        <nav className='ms-auto d-flex flex-column h-100 text-center w-50'>
             <NavLink className='text-white bg-dark rounded py-2 mb-auto'>
               {/* <i className="fa-regular fa-moon h5"></i><br/> */}
               <i className="fa-regular fa-sun h5"></i>
