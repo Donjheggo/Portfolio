@@ -67,7 +67,7 @@ const About = () => {
         <div className='row'>
           <div className='col-6 p-3 border-end'>
             <i className="fa-solid fa-database h1 text-warning"></i>
-              <h5>Databases</h5>
+              <h5>ORM</h5>
               <ul className='fw-light'>
                 <li>SQLite</li>
                 <li>MongoDB [currently learning]</li>

@@ -2,18 +2,14 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 
 const Header = () => {
-
-  const test = () => {
-    console.log("test")
-  }
-
+ 
   return (
       <header style={{backgroundColor: 'white', height: '100%'}} className="small-screen-hide">
 
         <nav className='ms-auto d-flex flex-column h-100 text-center w-75'>
             <NavLink className='text-white bg-dark rounded py-2 mb-auto'>
-              <i className="fa-regular fa-moon h5"></i><br/>
-              {/* <i className="fa-regular fa-sun h5"></i> */}
+              {/* <i className="fa-regular fa-moon h5"></i><br/> */}
+              <i className="fa-regular fa-sun h5"></i>
             </NavLink >
             <div className='bg-dark text-white rounded'>
             <NavLink to="/">
@@ -38,7 +34,7 @@ const Header = () => {
             <NavLink to="/resume">
               <div className='rounded pt-2'>
                 <div>
-                <i className="fa-regular fa-file h5"></i>
+                <i class="fa-solid fa-file-lines h5"></i>
                 </div>
                 <p className='small' style={{fontSize: '12px'}}>RESUME</p>
               </div>
