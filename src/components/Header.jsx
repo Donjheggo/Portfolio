@@ -34,7 +34,7 @@ const Header = () => {
             <NavLink to="/resume">
               <div className='rounded pt-2'>
                 <div>
-                <i class="fa-solid fa-file-lines h5"></i>
+                <i className="fa-solid fa-file-lines h5"></i>
                 </div>
                 <p className='small' style={{fontSize: '12px'}}>RESUME</p>
               </div>

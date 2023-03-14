@@ -11,11 +11,9 @@ const MainLayout = () => {
       <div className='row justify-content-center align-self-center'>
           
           {/*//////  LARGE SCREEN ////// */}
-          
           <div className='col-xl-1 col-sm-12'>
             <Header/>
           </div>
-
           {/*//////  END ////// */}
 
           
