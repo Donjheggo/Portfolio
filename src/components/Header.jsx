@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom'
 const Header = () => {
  
   return (
-      <header style={{backgroundColor: 'white', height: '100%'}} className="small-screen-hide">
+      <header style={{height: '100%'}} className="small-screen-hide">
 
         <nav className='ms-auto d-flex flex-column h-100 text-center w-75'>
             <NavLink className='text-white bg-dark rounded py-2 mb-auto'>
