@@ -10,10 +10,9 @@
   },
   "dependencies": {
     "firebase": "^9.17.2",
-    "miragejs": "^0.1.47",
-    "particles-bg": "^2.5.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-particles": "^2.9.3",
     "react-router-dom": "^6.9.0"
   },
   "devDependencies": {

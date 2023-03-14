@@ -8,7 +8,6 @@ import ProjectDetails, { projectDetailLoader } from "./pages/ProjectDetails"
 import Resume from "./pages/Resume"
 import NotFound from "./pages/NotFound"
 
-import ParticlesBg from 'particles-bg'
 
 
 
@@ -26,7 +25,6 @@ const App = () => {
 
   return (
     <div>
-      <ParticlesBg type="lines" bg={true} color="yellow"/>
       <RouterProvider router={router}/>
     </div>
   )
