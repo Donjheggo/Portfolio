@@ -28,8 +28,8 @@ a:hover{
 
 .scrollbar::-webkit-scrollbar-track, html::-webkit-scrollbar-track {
     border-radius: 5px;
-    background-color: lightgray;
-    border: 1px solid lightgray;
+    background-color: black;
+    border: 1px solid black;
 }
 
 .scrollbar::-webkit-scrollbar-thumb, html::-webkit-scrollbar-thumb {
