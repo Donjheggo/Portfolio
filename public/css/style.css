@@ -28,7 +28,6 @@ a:hover{
     background-color: white;
     border-radius: 100%;
     width: 200px;
-    box-shadow: 0 4px 6px rgb(255,213,0, 0.1), 0 1px 3px rgb(255,213,0, 0.8);
 }   
 
 .projects-img:hover{

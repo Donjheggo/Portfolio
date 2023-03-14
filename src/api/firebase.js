@@ -1,5 +1,6 @@
 import { initializeApp } from "firebase/app";
 import { getFirestore, collection, doc, getDocs, getDoc, } from "firebase/firestore/lite"
+import { getAuth } from "firebase/auth"
 
 const firebaseConfig = {
     apiKey: "AIzaSyABqBdNIdCMf8tbbKQLOgphJvIzW283GKg",
@@ -43,3 +44,6 @@ export const getProjectDetails = async(id) => {
     }, 1000);
   });
 }
+
+export const auth = getAuth(app)
+
