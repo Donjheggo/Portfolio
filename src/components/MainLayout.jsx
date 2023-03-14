@@ -7,39 +7,41 @@ import Me from "./Me"
 
 const MainLayout = () => {
   return (
-    <div className='container main-layout'>
-      <div className='row justify-content-center align-self-center'>
-          
-          {/*//////  LARGE SCREEN ////// */}
-          <div className='col-xl-1 col-sm-12'>
-            <Header/>
-          </div>
-          {/*//////  END ////// */}
+    <div>
+      <div className='container main-layout'>
+        <div className='row justify-content-center align-self-center'>
+            
+            {/*//////  LARGE SCREEN ////// */}
+            <div className='col-xl-1 col-sm-12'>
+              <Header/>
+            </div>
+            {/*//////  END ////// */}
 
-          
-          {/*//////  FOR SMALL SCREEN ////// */}
-          <div className='col-12 bg-dark text-warning shadow-lg large-screen-hide'>
-            <SmallHeader/>
-          </div>
-          {/*//////  END ////// */}
-
-
-          <div className='bg-dark text-white large-screen-rounded col-xl-4 col-sm-12 p-0 small-screen-hide'>
-            <Me/>
-          </div>
+            
+            {/*//////  FOR SMALL SCREEN ////// */}
+            <div className='col-12 bg-dark text-warning shadow-lg large-screen-hide'>
+              <SmallHeader/>
+            </div>
+            {/*//////  END ////// */}
 
 
-          <div className='bg-dark responsive-outlet scrollbar text-white large-screen-rounded  mx-1 col-xl-6 col-sm-12 p-4'>
-            <Outlet/>
-          </div>
+            <div className='bg-dark text-white large-screen-rounded col-xl-4 col-sm-12 p-0 small-screen-hide'>
+              <Me/>
+            </div>
 
 
-          {/*//////  SMALL SCREEN ////// */}
-          <div className='bg-dark text-white large-screen-hide col-xl-4 col-sm-12 p-0'>
-            <Me/>
-          </div>
-          {/*//////  END  ////// */}
+            <div className='bg-dark responsive-outlet scrollbar text-white large-screen-rounded  mx-1 col-xl-6 col-sm-12 p-4'>
+              <Outlet/>
+            </div>
 
+
+            {/*//////  SMALL SCREEN ////// */}
+            <div className='bg-dark text-white large-screen-hide col-xl-4 col-sm-12 p-0'>
+              <Me/>
+            </div>
+            {/*//////  END  ////// */}
+
+        </div>
       </div>
     </div>
   )
