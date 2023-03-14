@@ -21,7 +21,7 @@ const Header = () => {
               </div>
             </NavLink>
             <hr/>
-            <NavLink to="/projects">
+            <NavLink to="/works">
               <div className='rounded pt-2'>
                 <div>
                 <i className="fa-solid fa-briefcase h5"></i>
