@@ -39,11 +39,11 @@ const Me = () => {
 
         <div>
           <hr/>
-          <div className="d-flex justify-content-between bottom" >
-            <div className='col-6 pb-3 text-center'>
+          <div className="d-flex justify-content-between">
+            <div className='col-6 text-center'>
               <a href="/cv/CV.pdf"> Download CV &nbsp;<i className="fa-solid fa-cloud-arrow-down"></i></a>
             </div>
-            <div className='col-6 mb-3 border-start text-center'>
+            <div className='col-6 border-start text-center'>
               <NavLink target="_blank" to="https://www.linkedin.com/in/donjheggo/"> My Linkedin &nbsp;<i className="fa-brands fa-linkedin"></i></NavLink>
             </div>
           </div>
