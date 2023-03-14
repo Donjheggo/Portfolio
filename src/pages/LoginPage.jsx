@@ -29,7 +29,6 @@ const LoginPage = () => {
           <button className='signin-btn'>Sign in</button>
         </Form>
       </div>
-      <AuthDetails/>
     </div>
   )
 }
