@@ -1,6 +1,7 @@
 import React from 'react'
 
 const About = () => {
+
   return (
     <div className='about container'>
       <h4 className='text-warning'>About</h4>

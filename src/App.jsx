@@ -7,9 +7,7 @@ import Projects, { projectsLoader } from "./pages/Projects"
 import ProjectDetails, { projectDetailLoader } from "./pages/ProjectDetails"
 import Resume from "./pages/Resume"
 import NotFound from "./pages/NotFound"
-
-
-
+import ParticlesBG from './components/ParticlesBG'
 
 const App = () => {
 
@@ -25,6 +23,8 @@ const App = () => {
 
   return (
     <div>
+      <ParticlesBG />
+
       <RouterProvider router={router}/>
     </div>
   )

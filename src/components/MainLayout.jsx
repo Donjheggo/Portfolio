@@ -19,7 +19,7 @@ const MainLayout = () => {
 
             
             {/*//////  FOR SMALL SCREEN ////// */}
-            <div className='col-12 bg-dark text-warning shadow-lg large-screen-hide'>
+            <div className='col-12 bg-dark text-white shadow-lg large-screen-hide'>
               <SmallHeader/>
             </div>
             {/*//////  END ////// */}
