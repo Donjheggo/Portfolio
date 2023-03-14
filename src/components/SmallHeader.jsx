@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom'
 
 const SmallHeader = () => {
   return (
-    <header>
+    <header className='border-bottom'>
         <nav className='d-flex justify-content-between p-3'>
             <div>
                 <NavLink>
@@ -17,7 +17,6 @@ const SmallHeader = () => {
                 <NavLink to="/resume">RESUME</NavLink>
             </div>
         </nav>
-
     </header>
   )
 }
