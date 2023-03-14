@@ -8,12 +8,12 @@ const Me = () => {
 
   return (
 
-      <div className='me d-flex flex-column Tilt-inner'>
+      <div className='me d-flex flex-column'>
         <div className='bg-image'>
           {/* <img src={coverPhoto} className='rounded' width="100%" style={{objectFit: 'contain'}}/> */}
         </div>
         <div className="text-center">
-          <img src={myPhoto} className="w-50 my-photo"/>
+          <img src={myPhoto} className="my-photo"/>
         </div>
         <div className='text-center'>
           <HackerText text="Christian Jhegg Fermilan" />
