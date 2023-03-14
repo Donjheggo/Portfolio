@@ -4,6 +4,8 @@ import Project from '../components/Project'
 import {Link, useSearchParams, useLoaderData, defer, Await} from "react-router-dom"
 import { getProjects } from "../api/firebase"
 
+import Loader from "../components/Loader"
+
 export const projectsLoader = () => {
   return defer({projects: getProjects()})
 }
@@ -66,7 +68,7 @@ const Projects = () => {
       </div>
       <hr/>
       <div className='row'>
-        <Suspense fallback={<h1>Loading projects...</h1>}>
+        <Suspense fallback={<Loader/>}>
           <Await resolve={projectLoader.projects}>
             {renderProjectsElement}
           </Await>

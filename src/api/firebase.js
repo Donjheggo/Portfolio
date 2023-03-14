@@ -16,13 +16,21 @@ const db = getFirestore(app)
 
 const projectsCollectionRef = collection(db, "projects")
 
-export const getProjects = async() => {
-  const querySnapShot = await getDocs(projectsCollectionRef);
-  const dataArr = querySnapShot.docs.map(doc => ({
-    ...doc.data(),
-    id: doc.id
-  }))
-  return dataArr
+export const getProjects = () => {
+  return new Promise(async(resolve, reject) => {
+    setTimeout(async() => {
+      try {
+        const querySnapShot = await getDocs(projectsCollectionRef);
+        const dataArr = querySnapShot.docs.map(doc => ({
+          ...doc.data(),
+          id: doc.id
+        }))
+        // resolve(dataArr)
+      } catch (error) {
+        reject(error)
+      }
+    }, 1000)
+  })
 }
 
 export const getProjectDetails = async(id) => {

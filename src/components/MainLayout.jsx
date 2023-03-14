@@ -8,8 +8,8 @@ import Me from "./Me"
 const MainLayout = () => {
   return (
     <div>
-      <div className='container main-layout'>
-        <div className='row justify-content-center align-self-center'>
+      <div className='container-fluid main-layout'>
+        <div className='row justify-content-center align-self-center w-100'>
             
             {/*//////  LARGE SCREEN ////// */}
             <div className='col-xl-1 col-sm-12'>
@@ -30,7 +30,7 @@ const MainLayout = () => {
             </div>
 
 
-            <div className='bg-dark responsive-outlet scrollbar text-white large-screen-rounded  mx-1 col-xl-6 col-sm-12 p-4'>
+            <div className='position-relative bg-dark responsive-outlet scrollbar text-white large-screen-rounded  mx-1 col-xl-6 col-sm-12 p-4'>
               <Outlet/>
             </div>
 
