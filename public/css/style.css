@@ -15,6 +15,10 @@ a:hover{
     color: #ffd500;
 }
 
+.fa-sun:hover{
+    color: #ffd500;
+}
+
 .theme-btn:hover{
     cursor: pointer;
 }
