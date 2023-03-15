@@ -1,14 +1,14 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 
-const SmallHeader = () => {
+const SmallHeader = (props) => {
   return (
     <header className='border-bottom'>
         <nav className='d-flex justify-content-between p-3'>
             <div>
-                <NavLink>
+                <NavLink onClick={props.toggleTheme}>
                   {/* <i className="fa-regular fa-moon h5"></i> */}
-                  <i className="fa-regular fa-sun h5"></i>
+                  <i className={`fa-regular ${props.icon} h5`}></i>
                 </NavLink>
             </div>
             <div>

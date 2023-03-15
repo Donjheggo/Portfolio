@@ -1,17 +1,17 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 
-const Header = () => {
+const Header = (props) => {
  
   return (
       <header style={{height: '100%'}} className="small-screen-hide">
 
         <nav className='ms-auto d-flex flex-column h-100 text-center w-50'>
-            <NavLink className='text-white bg-dark rounded py-2 mb-auto'>
+            <NavLink onClick={props.toggleTheme} className={`${props.bgColor} ${props.txtColor} rounded py-2 mb-auto`}>
               {/* <i className="fa-regular fa-moon h5"></i><br/> */}
-              <i className="fa-regular fa-sun h5"></i>
+              <i className={`fa-regular ${props.icon} h5`}></i>
             </NavLink >
-            <div className='bg-dark text-white rounded'>
+            <div className={`${props.bgColor} ${props.txtColor} rounded`}>
             <NavLink to="/">
               <div className='rounded pt-3'>
                 <div> 
