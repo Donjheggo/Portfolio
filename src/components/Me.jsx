@@ -2,6 +2,7 @@ import React, {useRef} from 'react'
 import { NavLink } from 'react-router-dom'
 import coverPhoto from "/images/coverphoto.jpg"
 import myPhoto from "/images/Me.png"
+import mypic from "/images/mypic.png"
 import HackerText from "./HackerText"
 
 const Me = () => {
@@ -13,7 +14,7 @@ const Me = () => {
           {/* <img src={coverPhoto} className='rounded' width="100%" style={{objectFit: 'contain'}}/> */}
         </div>
         <div className="text-center">
-          <img src={myPhoto} className="my-photo"/>
+          <img src={mypic} className="my-photo"/>
         </div>
         <div className='text-center mt-2'>
           <HackerText text="Christian Jhegg Fermilan" />
