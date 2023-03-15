@@ -34,10 +34,10 @@ a:hover{
     box-shadow: 0 8px 12px rgb(255,213,0, 0.1), 0 2px 6px rgb(255,213,0, 0.8);
 }
 
-.my-links{
+/* .my-links{
     margin-top: 3rem;
     margin-bottom: 1rem;
-}
+} */
 
 
 .scrollbar::-webkit-scrollbar, html::-webkit-scrollbar {
@@ -107,7 +107,7 @@ html::-webkit-scrollbar-track {
         display: none;
     }
     .main-layout{
-        height: 60rem;
+        height: 100vh;
         display: flex;
         justify-content: center;
         padding-right: 0 !important;
@@ -131,7 +131,7 @@ html::-webkit-scrollbar-track {
 .bg-image{
     background-image: url("/images/coverphoto.jpg");
     width: 100%;
-    height: 320px;
+    height: 300px;
     object-fit: cover;
 }
 

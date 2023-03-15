@@ -49,7 +49,7 @@ const MainLayout = () => {
             </div>
 
 
-            <div style={{height: '45rem'}} className={`${bgColor} ${txtColor} position-relative responsive-outlet scrollbar large-screen-rounded  mx-1 col-xl-6 col-sm-12 p-4`}>
+            <div style={{height: '40rem'}} className={`${bgColor} ${txtColor} position-relative responsive-outlet scrollbar large-screen-rounded  mx-1 col-xl-6 col-sm-12 p-4`}>
               <Outlet/>
             </div>
 
