@@ -1,6 +1,8 @@
-import React from 'react'
+import React, {useEffect, useState} from 'react'
 import {Route, RouterProvider, createBrowserRouter, createRoutesFromElements} from 'react-router-dom'
+
 import MainLayout from "./components/MainLayout"
+import Loader from './components/Loader'
 
 import About from "./pages/About"
 import Projects, { projectsLoader } from "./pages/Projects"
@@ -13,6 +15,15 @@ import ParticlesBG from './components/ParticlesBG'
 
 
 const App = () => {
+
+  const [preloader, setPreloader] = useState(false)
+
+  useEffect( () => {
+    setPreloader(true)
+    setTimeout(() => {
+      setPreloader(false)
+    }, 3000) 
+  }, [])
 
   const router = createBrowserRouter(createRoutesFromElements(
     <Route path='/' element={<MainLayout/>}>
@@ -27,8 +38,10 @@ const App = () => {
 
   return (
     <div>
-      <ParticlesBG/>
-      <RouterProvider router={router}/>
+        <ParticlesBG/>
+        {preloader 
+          ? <Loader/>
+          : <RouterProvider router={router} />}
     </div>
   )
 }

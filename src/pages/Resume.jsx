@@ -1,12 +1,26 @@
 
-import React from 'react'
+import React, {useState, useEffect} from 'react'
+import Loader from '../components/Loader'
 
 const Resume = () => {
+
+  const [preloader, setPreloader] = useState(false)
+
+  useEffect( () => {
+    setPreloader(true)
+    setTimeout(() => {
+      setPreloader(false)
+    }, 1000) 
+  }, [])
+
+
   return (
     <div className='resume container-fluid'>
       <h4 className='text-warning'>Resume</h4>
       <hr/>
-      <div className='row'>
+      {preloader 
+      ? <Loader/> 
+      : <div className='row'>
         <div className='col-12'>
           <h5 className='text-warning'>Objectives</h5>
           <p className='fw-light'>Seeking a challenging career with a progressive organization that provides an opportunity to capitalize on my skills & abilities in the field of web development.</p>
@@ -41,6 +55,8 @@ const Resume = () => {
           </ul>
         </div>
       </div>
+      }
+      
     </div>
   )
 }
