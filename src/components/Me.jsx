@@ -26,14 +26,14 @@ const Me = () => {
               </span>
             </p>
             <nav className='d-flex gap-2 justify-content-center mt-3'>
-              <NavLink to="">
+              <NavLink to="https://github.com/Donjheggo" target="_blank">
                 <i className="fa-brands fa-github"></i>
               </NavLink>
-              <NavLink to="">
+              <NavLink to="https://www.linkedin.com/in/donjheggo/" target="_blank">
                 <i className="fa-brands fa-linkedin"></i>
               </NavLink>
-              <NavLink to="">
-                <i className="fa-brands fa-facebook"></i>
+              <NavLink to="https://www.facebook.com/Donjheggo/">
+                <i className="fa-brands fa-facebook" target="_blank"></i>
               </NavLink>
             </nav>
         </div>
